@@ -1,0 +1,29 @@
+{
+  "name": "node-sensorhub",
+  "version": "1.0.0",
+  "description": "A sensorhub in Node.JS for the Raspberry Pi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-sensorhub/node-sensorhub.git"
+  },
+  "keywords": [
+    "weather",
+    "sensor-hub",
+    "raspberry-pi"
+  ],
+  "author": "Lee Bousfield",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-sensorhub/node-sensorhub/issues"
+  },
+  "homepage": "https://github.com/node-sensorhub/node-sensorhub#readme",
+  "dependencies": {
+    "async": "^1.3.0",
+    "node-dht-sensor": "^0.0.8",
+    "adc-pi-gpio": "^0.0.2"
+  }
+}
