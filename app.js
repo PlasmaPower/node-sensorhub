@@ -34,7 +34,9 @@ fs.readdir(path.join(__dirname, 'sensors'), function (files) {
 		sensors.push(require('./sensors/' + file));
 	});
 	sensors.forEach(function (sensor) {
-		sensor.init();
+		if (sensor.init) {
+			sensor.init();
+		}
 	});
 	fs.appendFile(filename, flatten(sensors.map(function (sensor) {
 		return sensor.getCSVheader();
