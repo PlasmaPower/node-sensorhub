@@ -21,7 +21,15 @@ process.on('SIGINT', function(){
 });
 
 function flatten (deepArray) {
-	return [].concat.apply([], deepArray);
+	var array = [];
+	deepArray.forEach(function (val) {
+		if (val instanceof Array) {
+			array = array.concat(val);
+		} else {
+			array.push(val);
+		}
+	});
+	return array;
 }
 
 var now = Date.now();
