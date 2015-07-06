@@ -12,6 +12,6 @@ exports.getCSVheader = function () {
 
 exports.getValues = function () {
 	var values = dhtlib.read();
-	return [values.humidity.toFixed(2), values.temperature.toFixed(2)]
+	return [values.humidity.toFixed(2), values.temperature.toFixed(2)];
 };
 
